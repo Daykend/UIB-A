@@ -2,6 +2,7 @@ package Program;
 
 import static util.Constantes.*;
 
+import java.util.Locale;
 import java.util.Scanner;
 
 import entities.Cliente;
@@ -11,6 +12,8 @@ import util.SenhaUtil;
 public class UIBMain {
 
 	public static void main(String[] args) {
+		Locale.setDefault(Locale.US);
+		
 		Scanner leTeclado = new Scanner(System.in);
 
 		Conta contas[] = new Conta[TOTAL_CONTA];
